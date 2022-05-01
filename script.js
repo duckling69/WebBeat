@@ -39,8 +39,7 @@ let beats = {
 
 /**
  * Function to play the beat upon a press of key
- * HINT: use the keyCode
- */
+
 triggerBeat = (event) => {
     var code = event.keyCode;
     if(code in beats){
@@ -49,8 +48,3 @@ triggerBeat = (event) => {
     }
 }
 
-/**
- * Keydown listener to fire triggerBeat function
- * HINT: Log the keyCode of the key
- */
-document.addEventListener('keydown', triggerBeat);
